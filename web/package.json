@@ -19,11 +19,16 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:inst": "react-scripts -r @cypress/instrument-cra start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "coverage:report": "npx nyc report --reporter-html",
     "cy:run:desktop": "npx cypress run --config viewportWidth=1200",
-    "cy:run:tablet": "npx cypress run --config viewportWidth=765"
+    "cy:run:tablet": "npx cypress run --config viewportWidth=765",
+    "test:ui": "npx cypress run --spec 'cypress/integration/ui/**'",
+    "test:api": "npx cypress run --spec 'cypress/integration/api/**'",
+    "test:component": "npx cypress run --spec 'cypress/component/**'"
   },
   "eslintConfig": {
     "extends": [
@@ -45,8 +50,11 @@
   },
   "devDependencies": {
     "@bahmutov/cy-api": "^1.6.0",
+    "@cypress/code-coverage": "^3.9.11",
+    "@cypress/instrument-cra": "^1.4.0",
     "@types/react-router-dom": "^5.1.5",
     "cypress": "5.2.0",
-    "cypress-react-unit-test": "^4.17.2"
+    "cypress-react-unit-test": "^4.17.2",
+    "nyc": "^15.1.0"
   }
 }

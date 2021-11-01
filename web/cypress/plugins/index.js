@@ -17,5 +17,6 @@
  */
 module.exports = (on, config) => {
   require('cypress-react-unit-test/plugins/cra-v3')(on, config)
+  require('@cypress/code-coverage/task')(on, config)
   return config
 }
