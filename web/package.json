@@ -19,6 +19,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:backend": "cd ../server && yarn start",
+    "start:ci": "run-p start:backend start",
     "start:inst": "react-scripts -r @cypress/instrument-cra start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -55,6 +57,7 @@
     "@types/react-router-dom": "^5.1.5",
     "cypress": "5.2.0",
     "cypress-react-unit-test": "^4.17.2",
-    "nyc": "^15.1.0"
+    "nyc": "^15.1.0",
+    "yarn-run-all": "^3.1.1"
   }
 }
