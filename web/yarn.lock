@@ -1785,6 +1785,13 @@
     "@babel/helper-validator-identifier" "^7.15.7"
     to-fast-properties "^2.0.0"
 
+"@bahmutov/cy-api@^1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@bahmutov/cy-api/-/cy-api-1.6.0.tgz#0c61033915eddcf6ecdb83f33cb0bfb8dfb42670"
+  integrity sha512-NZWNumVZRZE479ZN44a1Kih1Hp7FAiira89W0CD0Nw18ltw7D0Xr76ZAIzFs48eYnjdV3RsOsh3P+A+fVllpbw==
+  dependencies:
+    common-tags "1.8.0"
+
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.4.tgz#f864ae85004d0fcab6f50be9141c4da368d1656a"
@@ -4320,7 +4327,7 @@ commander@^4.1.1:
   resolved "https://registry.yarnpkg.com/commander/-/commander-4.1.1.tgz#9fd602bd936294e9e9ef46a3f4d6964044b18068"
   integrity sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==
 
-common-tags@^1.8.0:
+common-tags@1.8.0, common-tags@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/common-tags/-/common-tags-1.8.0.tgz#8e3153e542d4a39e9b10554434afaaf98956a937"
   integrity sha512-6P6g0uetGpW/sdyUy/iQQCbFF0kWVMSIVSyYz7Zgjcgh8mgw8PQzDNZeyZ5DQ2gM7LBoZPHmnjz8rUthkBG5tw==
