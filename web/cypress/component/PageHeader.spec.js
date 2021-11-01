@@ -27,7 +27,7 @@ describe('PageHeader component', () => {
 
     cy.get('.page-header').as('header')
     cy.get('@header').find('strong').as('title')
-    cy.get('@header').children().children('p').as('description')
+    cy.get('@header').children().find('p').as('description')
 
     cy.get('@title').should('have.text', title)
     cy.get('@description').should('have.text', description)
